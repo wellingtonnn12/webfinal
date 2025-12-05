@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities | Hotel Transylvania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Hotel Transylvania</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="amenities.html" class="nav-link active">Amenities</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="booking.html" class="nav-link btn-nav">Book Now</a>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Amenities Section -->
+    <section class="features">
+        <div class="container">
+            <h1 class="section-title">Our Amenities</h1>
+            <p class="section-subtitle">World-Class Facilities for Your Comfort</p>
+            
+            <!-- Added clickable amenity cards with images -->
+            <div class="features-grid" style="margin-top: 3rem;">
+                <div class="feature-card clickable-card" data-amenity="dining">
+                    <img src="https://images.unsplash.com/photo-1504674900569-b73a0ebf0313?w=400&h=300&fit=crop" alt="Fine Dining" class="room-image">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Fine Dining Restaurant</h3>
+                    <p>Award-winning cuisine prepared by renowned chefs, featuring local and international dishes.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Michelin-starred chef</li>
+                            <li>À la carte and tasting menus</li>
+                            <li>Wine cellar with 500+ selections</li>
+                            <li>Private dining rooms</li>
+                            <li>Farm-to-table ingredients</li>
+                            <li>Vegetarian and vegan options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="pool">
+                    <img src="https://images.unsplash.com/photo-1576610616656-570eca3b36b9?w=400&h=300&fit=crop" alt="Indoor & Outdoor Pools" class="room-image">
+                    <div class="feature-icon">🏊</div>
+                    <h3>Indoor & Outdoor Pools</h3>
+                    <p>Olympic-sized pools with heated water, sauna, and adjacent lounging areas.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Olympic-size outdoor pool</li>
+                            <li>Heated indoor pool</li>
+                            <li>Infinity edge design</li>
+                            <li>Sauna and steam room</li>
+                            <li>Poolside cabanas</li>
+                            <li>Aqua aerobics classes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="spa">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop" alt="Luxury Spa" class="room-image">
+                    <div class="feature-icon">💆</div>
+                    <h3>Luxury Spa</h3>
+                    <p>Full-service spa with massages, facials, and wellness treatments using premium products.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Swedish and deep tissue massage</li>
+                            <li>Facial treatments with luxury brands</li>
+                            <li>Body scrubs and wraps</li>
+                            <li>Aromatherapy sessions</li>
+                            <li>Private treatment suites</li>
+                            <li>Couples spa packages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="fitness">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Fitness Center" class="room-image">
+                    <div class="feature-icon">💪</div>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art equipment, yoga classes, and personal training services available.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Cardio machines</li>
+                            <li>Free weights and resistance training</li>
+                            <li>Daily yoga classes</li>
+                            <li>Personal training sessions</li>
+                            <li>Pilates studio</li>
+                            <li>Group fitness classes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="entertainment">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop" alt="Entertainment Lounge" class="room-image">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Entertainment Lounge</h3>
+                    <p>Live performances, themed nights, and interactive entertainment throughout the week.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Live jazz performances</li>
+                            <li>Comedy nights</li>
+                            <li>Gothic-themed events</li>
+                            <li>Theater-style seating</li>
+                            <li>Gourmet bar menu</li>
+                            <li>Schedule varies seasonally</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="library">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583f20270319?w=400&h=300&fit=crop" alt="Library & Concierge" class="room-image">
+                    <div class="feature-icon">📚</div>
+                    <h3>Library & Concierge</h3>
+                    <p>Extensive book collection, tour arrangements, and personalized travel planning services.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>5,000+ book collection</li>
+                            <li>Reading lounge with fireplace</li>
+                            <li>Tour booking and reservations</li>
+                            <li>Restaurant recommendations</li>
+                            <li>Local attraction guides</li>
+                            <li>24/7 concierge service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="game">
+                    <img src="https://images.unsplash.com/photo-1570303995843-c2c89f1574da?w=400&h=300&fit=crop" alt="Game Room" class="room-image">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Game Room</h3>
+                    <p>Billiards, chess, board games, and arcade games for family entertainment.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Professional billiard tables</li>
+                            <li>Chess and board games</li>
+                            <li>Vintage arcade games</li>
+                            <li>Darts and shuffleboard</li>
+                            <li>VR gaming station</li>
+                            <li>Group tournament hosting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="cafe">
+                    <img src="https://images.unsplash.com/photo-1511288291099-105d64753e81?w=400&h=300&fit=crop" alt="Café & Bar" class="room-image">
+                    <div class="feature-icon">☕</div>
+                    <h3>Café & Bar</h3>
+                    <p>Premium coffee bar, craft cocktails, and light refreshments available 24/7.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Artisan coffee roastery</li>
+                            <li>Specialty cocktails</li>
+                            <li>Premium spirits selection</li>
+                            <li>Pastries and light bites</li>
+                            <li>Outdoor terrace seating</li>
+                            <li>Barista on staff</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card clickable-card" data-amenity="wifi">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="High-Speed Wi-Fi" class="room-image">
+                    <div class="feature-icon">📶</div>
+                    <h3>High-Speed Wi-Fi</h3>
+                    <p>Complimentary high-speed internet throughout the property and in all rooms.</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Fiber-optic connection</li>
+                            <li>Download speeds up to 1 Gbps</li>
+                            <li>Secure guest network</li>
+                            <li>Business center access</li>
+                            <li>Printing services</li>
+                            <li>Tech support available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for amenity details -->
+    <div id="amenityModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="amenityModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Hotel Transylvania offers the ultimate luxury vacation experience with world-class amenities and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@hoteltransylvania.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 1 Castle Road, Transylvania, Romania</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hotel Transylvania. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

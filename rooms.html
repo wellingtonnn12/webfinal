@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms | Hotel Transylvania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Hotel Transylvania</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="rooms.html" class="nav-link active">Rooms</a>
+                <a href="amenities.html" class="nav-link">Amenities</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="booking.html" class="nav-link btn-nav">Book Now</a>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rooms Section -->
+    <section class="features">
+        <div class="container">
+            <h1 class="section-title">Our Rooms</h1>
+            <p class="section-subtitle">Experience Gothic Luxury in Every Room</p>
+            
+            <!-- Filter buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Rooms</button>
+                <button class="filter-btn" data-category="luxury">Luxury Suites</button>
+                <button class="filter-btn" data-category="standard">Standard</button>
+                <button class="filter-btn" data-category="unique">Unique</button>
+            </div>
+            
+            <div class="features-grid" style="margin-top: 3rem;">
+                <!-- Added clickable room cards with images and modal trigger -->
+                <!-- Luxury Suite -->
+                <div class="feature-card room-card clickable-card" data-category="luxury" data-room="royal-suite">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop" alt="Royal Suite" class="room-image">
+                    <div class="feature-icon">👑</div>
+                    <h3>Royal Suite</h3>
+                    <p>Our most luxurious accommodation featuring a grand four-poster bed, marble bathroom, and castle views.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$599/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>King-size four-poster bed</li>
+                            <li>Marble en-suite bathroom</li>
+                            <li>Private sitting area</li>
+                            <li>Castle and garden views</li>
+                            <li>Premium minibar</li>
+                            <li>24-hour room service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tower Suite -->
+                <div class="feature-card room-card clickable-card" data-category="luxury" data-room="tower-suite">
+                    <img src="https://images.unsplash.com/photo-1566665556112-652d80ad5586?w=400&h=300&fit=crop" alt="Tower Suite" class="room-image">
+                    <div class="feature-icon">🏰</div>
+                    <h3>Tower Suite</h3>
+                    <p>Perched high in our historic tower with panoramic views and elegant gothic furnishings.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$449/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Spiral staircase access</li>
+                            <li>Panoramic 360° views</li>
+                            <li>Queen-size bed</li>
+                            <li>Tower lounge</li>
+                            <li>Historic architectural details</li>
+                            <li>Romantic ambiance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Penthouse -->
+                <div class="feature-card room-card clickable-card" data-category="luxury" data-room="penthouse">
+                    <img src="https://images.unsplash.com/photo-1578683800896-f1c3c98c0e7d?w=400&h=300&fit=crop" alt="Penthouse" class="room-image">
+                    <div class="feature-icon">💎</div>
+                    <h3>Penthouse</h3>
+                    <p>Ultimate luxury with private balcony, hot tub, and 360-degree views of the castle grounds.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$799/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Private infinity balcony</li>
+                            <li>In-room hot tub</li>
+                            <li>Full kitchen</li>
+                            <li>Separate living quarters</li>
+                            <li>Concierge service</li>
+                            <li>Exclusive penthouse lounge access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="feature-card room-card clickable-card" data-category="standard" data-room="deluxe">
+                    <img src="https://images.unsplash.com/photo-1611432579699-484f7990f17e?w=400&h=300&fit=crop" alt="Deluxe Room" class="room-image">
+                    <div class="feature-icon">✨</div>
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious rooms with premium bedding, modern amenities, and classic gothic decor.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$299/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Double bed or twin beds</li>
+                            <li>Premium linens</li>
+                            <li>Flat-screen TV</li>
+                            <li>Work desk</li>
+                            <li>Modern bathroom</li>
+                            <li>Daily housekeeping</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Standard Room -->
+                <div class="feature-card room-card clickable-card" data-category="standard" data-room="standard">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop" alt="Standard Room" class="room-image">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Standard Room</h3>
+                    <p>Comfortable rooms with all essential amenities and charming gothic atmosphere.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$199/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Cozy bed with quality bedding</li>
+                            <li>Private bathroom</li>
+                            <li>Climate control</li>
+                            <li>Basic entertainment</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Room cleaning service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Heritage Chamber -->
+                <div class="feature-card room-card clickable-card" data-category="unique" data-room="heritage">
+                    <img src="https://images.unsplash.com/photo-1568084960b4-a3a86b63c921?w=400&h=300&fit=crop" alt="Heritage Chamber" class="room-image">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Heritage Chamber</h3>
+                    <p>Uniquely themed rooms with historic artifacts and authentic period furnishings.</p>
+                    <p style="color: var(--accent-primary); font-weight: bold; margin-top: 1rem;">$349/night</p>
+                    <div class="amenity-details">
+                        <ul>
+                            <li>Authentic period furnishings</li>
+                            <li>Historic artifacts</li>
+                            <li>Original stone walls</li>
+                            <li>Fireplace</li>
+                            <li>Museum-quality decor</li>
+                            <li>Educational history plaque</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for room details -->
+    <div id="roomModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Hotel Transylvania offers the ultimate luxury vacation experience with world-class amenities and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@hoteltransylvania.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 1 Castle Road, Transylvania, Romania</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hotel Transylvania. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
